@@ -1,0 +1,30 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.secret.tmp
+secrets/
+
+# Runtime state (default lives outside the repo under ~/.local/state/agent-bridge)
+.state/
+state/
+FROZEN
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.log
+*.pid
+*.heartbeat
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Orchestration notes from the extraction pass (not part of the template)
+hidden/

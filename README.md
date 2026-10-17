@@ -90,8 +90,9 @@ itself, so each side needs a nudge:
 
 **Prerequisites**
 
-- An **OpenAI Secure MCP Tunnel** and its tunnel ID, plus an OpenAI API key
-  the tunnel control plane accepts. The remote ChatGPT agent must have the
+- An **OpenAI Secure MCP Tunnel** and its tunnel ID, plus a standard
+  **OpenAI API key** — that key is the tunnel control-plane credential,
+  sent as a Bearer token to `https://api.openai.com`. The remote ChatGPT agent must have the
   tunnel attached as an MCP app/connector (follow OpenAI's Secure MCP
   Tunnel documentation). `tunnel-poll.py` speaks the tunnel-client
   control-plane protocol itself, so it is this server's tunnel client. Do
